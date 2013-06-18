@@ -70,7 +70,7 @@ when "ubuntu", "debian"
 
   apt_repository "osops" do
     uri node["osops"]["apt_repository"]["osops-packages"]
-    distribution node["lsb"]["codename"]
+    distribution "precise"
     components ["main"]
     keyserver "hkp://keyserver.ubuntu.com:80"
     key "53E8EA35"
